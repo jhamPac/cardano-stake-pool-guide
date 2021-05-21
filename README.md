@@ -12,7 +12,7 @@ tips, gotchas and other learnings
 
 ## Cardano node install
 * resource followed: https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node
-* the following tools do not come packaged with ubuntu so you need to install them via apt: git, llvm, libnuma-dev, make, libtool
+* the following tools do not come packaged with ubuntu so you need to install them via apt: git, llvm, libnuma-dev, make, libtool, jq, net-tools, fail2ban
 * during the libsodium build step
   * run the configure bash script with the following argument: ./configure --disable-dependency-tracking
 * correctly set the LD_LIBRARY_PATH, the guide has it set incorrectly: export LD_LIBRARY_PATH=$(llvm-config --libdir):$LD_LIBRARY_PATH
