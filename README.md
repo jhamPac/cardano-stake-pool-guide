@@ -16,3 +16,7 @@ tips, gotchas and other learnings
 * during the libsodium build step
   * run the configure bash script with the following argument: ./configure --disable-dependency-tracking
 * correctly set the LD_LIBRARY_PATH, the guide has it set incorrectly: export LD_LIBRARY_PATH=$(llvm-config --libdir):$LD_LIBRARY_PATH
+
+## Hardening the nodes
+* follow most of the guide
+* add the swap file step if necessary: https://cardano-node-installation.stakepool247.eu/adding-swap-virtual-memory
