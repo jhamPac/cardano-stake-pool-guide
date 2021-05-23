@@ -8,7 +8,7 @@ tips, gotchas and other learnings
 * 2 x powered usb hub: https://www.amazon.com/Sabrent-4-Port-Individual-Switches-HB-UM43/dp/B00JX1ZS5O
 * any monitor that can connect with the raspberry 🥮 (micro HDMI): https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/1
 
-## Raspberry Pie 🥮 setup (AcceptanceCriteria = bootloading Ubuntu from the USB storage rather than the microSD because faster, cheaper, better)
+## Raspberry Pie 🥮 setup (AcceptanceCriteria = bootloading Ubuntu from the USB storage rather than the microSD because faster | cheaper | better)
 - headless setup on both pies 🥮
   - https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
   - https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
