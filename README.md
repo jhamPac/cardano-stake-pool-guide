@@ -22,7 +22,7 @@ tips, gotchas and other learnings
   - https://linuxhint.com/how_to_boot_raspberry_pi_4_from_usb_ssd/#:~:text=From%20the%20Raspberry%20Pi%20OS,re%20done%2C%20click%20on%20Start. 
 
 
-## Cardano node install
+## Build and configure the cardano node
 * resource followed: https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node
 * the following tools do not come packaged with ubuntu so you need to install them via apt: git, llvm, libnuma-dev, make, libtool, jq, net-tools, fail2ban
 * during the libsodium build step
