@@ -6,10 +6,10 @@ tips, gotchas and other learnings
 * 2 x samsung 970 evo SSD M.2 NVMe, minimum 250GB: https://www.amazon.com/Samsung-970-EVO-250GB-MZ-V7E250BW/dp/B07BN5FJZQ
 * 2 x icy box SSD enclosure: https://www.amazon.com/Icy-Box-External-Type-C-Enclosure/dp/B07Z4BKTQG/ref=sr_1_3?crid=2Y0W4MG08XD27&dchild=1&keywords=icy+box+ssd+enclosure&qid=1621606795&sprefix=icy+box+ssd+enc%2Celectronics%2C201&sr=8-3
 * 2 x powered usb hub: https://www.amazon.com/Sabrent-4-Port-Individual-Switches-HB-UM43/dp/B00JX1ZS5O
-* any monitor that can connect with the raspberry 🥮 (micro HDMI): https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/1
+* any monitor that can connect with the raspberry 🥧 (micro HDMI): https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/1
 
-## Raspberry Pie 🥮 setup (AcceptanceCriteria = bootloading Ubuntu from the USB storage rather than the microSD card slot $ because faster | cheaper | [better](https://www.zdnet.com/article/booting-my-raspberry-pi-4-from-a-usb-device/))
-- headless setup on both pies 🥮
+## Raspberry Pie 🥧 setup (AcceptanceCriteria = bootloading Ubuntu from the USB storage rather than the microSD card slot $ because faster | cheaper | [better](https://www.zdnet.com/article/booting-my-raspberry-pi-4-from-a-usb-device/))
+- headless setup on both pies 🥧
   - https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
   - https://www.raspberrypi.org/software/
   - https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
@@ -28,7 +28,10 @@ tips, gotchas and other learnings
 * during the libsodium build step
   * run the configure bash script with the following argument: ./configure --disable-dependency-tracking
 * correctly set the LD_LIBRARY_PATH, the guide has it set incorrectly: export LD_LIBRARY_PATH=$(llvm-config --libdir):$LD_LIBRARY_PATH
+* the cli and node executable locations are different on the raspberry pie 🥧 vs the guide. during the copy step the executables can be found below:
+  * ~/path/to/sourcecode/dist-newstyle/build/aarch64-linux/ghc-8.10.4/cardano-cli-1.27.0/x/cardano-cli/build/cardano-cli
+  * ~/path/to/sourcecode/dist-newstyle/build/aarch64-linux/ghc-8.10.4/cardano-node-1.27.0/x/cardano-node/build/cardano-node
 
-## Harden Ubuntu on both raspberry pies 🥮
+## Harden Ubuntu on both raspberry pies 🥧
 * follow most of the guide
 * add the swap file step if necessary: https://cardano-node-installation.stakepool247.eu/adding-swap-virtual-memory
